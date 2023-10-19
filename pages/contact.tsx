@@ -1,16 +1,15 @@
-import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import { Inter } from 'next/font/google'
-import { MainLayout } from '@/components/layouts/MainLayout'
 import styles from '../components/layouts/MainLayout.module.css'
+import Link from 'next/link'
+import { MainLayout } from '@/components/layouts/MainLayout'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function HomePage() {
+export default function ContactPage() {
   return (
     <>
-      <MainLayout > 
+      <MainLayout >
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -21,14 +20,14 @@ export default function HomePage() {
             priority
           />
         </div>
-        <div><h1>HOME PAGE</h1> </div>
+        <div><h1>CONTACT PAGE</h1> </div>
         <div className={styles.grid}>
           <Link
-            href="/about"
+            href="/"
             className={styles.card}
           >
             <h2>
-              Ir a About <span>-&gt;</span>
+              Ir a Home <span>-&gt;</span>
             </h2>
           </Link>
         </div>
